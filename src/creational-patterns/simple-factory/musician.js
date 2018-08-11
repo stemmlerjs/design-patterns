@@ -3,6 +3,15 @@
 /**
  * @interface Musician
  * @desc Interface outlining how to create a Musician.
+ * 
+ * constructor(name, instrument)
+ * getName(): string
+ * getInstrument() : string
+ */
+
+/**
+ * @class Musician
+ * @desc Implementation of the Musician Interface
  */
 
 class Musician {

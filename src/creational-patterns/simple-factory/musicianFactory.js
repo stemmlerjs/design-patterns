@@ -7,7 +7,7 @@
 
 const Musician = require('./musician')
 
-module.exports = {
+const MusicianFactory = {
   create: (name, instrument) => {
 
     /**
@@ -27,3 +27,5 @@ module.exports = {
     return new Musician(name, instrument)
   }
 }
+
+module.exports = MusicianFactory;

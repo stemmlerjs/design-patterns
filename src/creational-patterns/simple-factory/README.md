@@ -1,5 +1,5 @@
 # Simple Factory
-
+--------------
 ### Category: Creational
 
 Real world example
@@ -23,4 +23,13 @@ When is it not necessary?
 > When the object that's instantiated never
 > changes, or instantiation takes place in an operation that subclasses can
 > easily override (such as an initialization operation).
+
+### Discussion
+
+- An increasingly popular definition of factory method is: `a static method of a class that returns an object of that class' type`. But unlike a constructor, the actual object it returns might be an instance of a subclass (as we can see in our example, if we wanted to create an EstablishedMusician object which would have additional methods and properties).
+- Factory Methods are usually called within [Template Methods](https://en.wikipedia.org/wiki/Template_method_pattern).
+- Often, designs start out using Factory Method (less complicated, more customizable, subclasses proliferate) and evolve toward Abstract Factory Method, Prototype, or Builder (more flexible, more complex) as the designer discovers where more flexibility is needed.
+- Some Factory Method advocates recommend that as a matter of language design (or failing that, as a matter of style) absolutely all constructors should be private or protected.
+
+### Additional Reading
 
